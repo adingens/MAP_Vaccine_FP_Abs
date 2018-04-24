@@ -1,0 +1,65 @@
+2017-12-30 16:24:47,745 - INFO - Beginning execution of dms2_logoplot in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:24:47,746 - INFO - Progress is being logged to ./results/diffsel/Figures/VRC34-01-LogFoldChangeunderlay-positive.log
+2017-12-30 16:24:49,169 - INFO - Version information:
+	Time and date: Sat Dec 30 16:24:47 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:24:49,169 - INFO - Parsed the following arguments:
+	nperline = 84
+	fracsurvive = None
+	overlay2 = ['./data/BG505pseudovirus_VRC34.01_site_log2IC50foldchange.csv', 'TZMbl', 'Log fold change IC50']
+	fracsurvivemax = None
+	overlaycolormap = YlOrRd
+	diffselrange = None
+	sortsites = yes
+	prefs = None
+	sepline = no
+	colormap = jet
+	mapmetric = functionalgroup
+	diffprefs = None
+	scalebar = ['10', 'differential selection = 10']
+	numberevery = 10
+	excludestop = no
+	outdir = ./results/diffsel/Figures/
+	restrictdiffsel = positive
+	stringency = 1
+	letterheight = 1
+	diffsel = ./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv
+	use_existing = no
+	ncpus = -1
+	overlay3 = None
+	overlay1 = ['./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv', 'wildtype', 'wildtype']
+	name = VRC34-01-LogFoldChangeunderlay-positive
+	ignore_extracols = no
+	underlay = yes
+
+2017-12-30 16:24:49,172 - INFO - Reading diffsel from file ./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv...
+2017-12-30 16:24:49,192 - INFO - Read data for 670 sites.
+
+2017-12-30 16:24:49,239 - INFO - Reading overlay for wildtype from ./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv...
+2017-12-30 16:24:49,305 - INFO - Read overlay for 670 sites.
+
+2017-12-30 16:24:49,305 - INFO - Reading overlay for TZMbl from ./data/BG505pseudovirus_VRC34.01_site_log2IC50foldchange.csv...
+2017-12-30 16:24:49,309 - INFO - Read overlay for 31 sites.
+
+2017-12-30 16:24:49,309 - INFO - Making logo plot ./results/diffsel/Figures/VRC34-01-LogFoldChangeunderlay-positive_diffsel.pdf...
+2017-12-30 16:25:00,028 - INFO - Successfully created logo plot.
+
+2017-12-30 16:25:00,029 - INFO - Successful completion of dms2_logoplot

@@ -1,0 +1,7 @@
+group,name,sel,mock,err,mds_names,libfracsurvive
+FP16-02-500ug,rep-1,mut-virus-1-FP16-02-500ug,mut-virus-1,wt-DNA-1,FP16-02-500ug-rep-1,0.052725
+FP16-02-500ug,rep-3,mut-virus-3-FP16-02-500ug,mut-virus-3,wt-DNA-3,FP16-02-500ug-rep-3,0.04188
+FP20-01-500ug,rep-3,mut-virus-3-FP20-01-500ug,mut-virus-3,wt-DNA-3,FP20-01-500ug-rep-3,0.038097000000000006
+FP20-01-500ug,rep-1,mut-virus-1-FP20-01-500ug,mut-virus-1,wt-DNA-1,FP20-01-500ug-rep-1,0.047702
+VRC34-33ug,rep-3,mut-virus-3-VRC34-33ug,mut-virus-3,wt-DNA-3,VRC34-33ug-rep-3,0.050239
+VRC34-33ug,rep-1,mut-virus-1-VRC34-33ug,mut-virus-1,wt-DNA-1,VRC34-33ug-rep-1,0.063644

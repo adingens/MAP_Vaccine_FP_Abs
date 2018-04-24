@@ -1,0 +1,71 @@
+2017-12-30 16:22:37,234 - INFO - Beginning execution of dms2_diffsel in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:22:37,234 - INFO - Progress is being logged to ./results/diffsel/wtDNA_ctrl/VRC34-33ug-rep-3.log
+2017-12-30 16:22:39,558 - INFO - Version information:
+	Time and date: Sat Dec 30 16:22:37 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:22:39,558 - INFO - Parsed the following arguments:
+	pseudocount = 5.0
+	use_existing = yes
+	name = VRC34-33ug-rep-3
+	chartype = codon_to_aa
+	indir = ./results/renumberedcounts
+	sel = mut-virus-3-VRC34-33ug
+	mock = mut-virus-3
+	outdir = ./results/diffsel/wtDNA_ctrl
+	excludestop = yes
+	ncpus = 2
+	err = wt-DNA-3
+	mincount = 0
+
+2017-12-30 16:22:39,559 - INFO - Reading selected sample counts from mut-virus-3-VRC34-33ug
+2017-12-30 16:22:39,572 - INFO - Reading mock-selected sample counts from mut-virus-3
+2017-12-30 16:22:39,578 - INFO - Reading error-control sample counts from wt-DNA-3
+2017-12-30 16:22:39,584 - INFO - Computing mutdiffsel...
+2017-12-30 16:22:42,592 - INFO - Mutations with largest mutdiffsel:
+site wildtype mutation  mutdiffsel
+515        I        P        3.03
+524        G        S        2.39
+ 88        N        H        2.29
+ 88        N        S        2.25
+516        G        L        2.23
+242        V        L        2.15
+516        G        V        2.14
+ 85        H        Q        2.12
+ 90        T        A        2.09
+ 90        T        V        2.08
+
+2017-12-30 16:22:42,593 - INFO - Writing to ./results/diffsel/wtDNA_ctrl/VRC34-33ug-rep-3_mutdiffsel.csv
+2017-12-30 16:22:42,630 - INFO - Computing sitediffsel...
+2017-12-30 16:22:42,643 - INFO - Sites with largest absolute sitediffsel:
+site  abs_diffsel  positive_diffsel  negative_diffsel  max_diffsel  min_diffsel
+ 88        20.53             19.99             -0.54         2.29        -0.27
+ 85        19.38             19.38              0.00         2.12         0.00
+516        18.97             18.40             -0.57         2.23        -0.31
+229        18.90             18.33             -0.56         2.00        -0.48
+ 90        17.83             17.83              0.00         2.09         0.00
+515        16.96             16.70             -0.25         3.03        -0.25
+325        16.57              0.00            -16.57         0.00        -2.07
+207        15.35              0.00            -15.35         0.00        -2.59
+513        15.27             15.01             -0.26         1.62        -0.26
+618        14.94              1.30            -13.65         0.94        -1.67
+
+2017-12-30 16:22:42,643 - INFO - Writing to ./results/diffsel/wtDNA_ctrl/VRC34-33ug-rep-3_sitediffsel.csv
+2017-12-30 16:22:42,653 - INFO - Successful completion of dms2_diffsel

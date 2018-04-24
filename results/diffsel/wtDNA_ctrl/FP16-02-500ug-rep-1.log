@@ -1,0 +1,71 @@
+2017-12-30 16:22:37,180 - INFO - Beginning execution of dms2_diffsel in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:22:37,181 - INFO - Progress is being logged to ./results/diffsel/wtDNA_ctrl/FP16-02-500ug-rep-1.log
+2017-12-30 16:22:39,533 - INFO - Version information:
+	Time and date: Sat Dec 30 16:22:37 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:22:39,534 - INFO - Parsed the following arguments:
+	sel = mut-virus-1-FP16-02-500ug
+	mock = mut-virus-1
+	indir = ./results/renumberedcounts
+	name = FP16-02-500ug-rep-1
+	mincount = 0
+	ncpus = 2
+	outdir = ./results/diffsel/wtDNA_ctrl
+	pseudocount = 5.0
+	err = wt-DNA-1
+	excludestop = yes
+	chartype = codon_to_aa
+	use_existing = yes
+
+2017-12-30 16:22:39,536 - INFO - Reading selected sample counts from mut-virus-1-FP16-02-500ug
+2017-12-30 16:22:39,547 - INFO - Reading mock-selected sample counts from mut-virus-1
+2017-12-30 16:22:39,554 - INFO - Reading error-control sample counts from wt-DNA-1
+2017-12-30 16:22:39,559 - INFO - Computing mutdiffsel...
+2017-12-30 16:22:42,554 - INFO - Mutations with largest mutdiffsel:
+site wildtype mutation  mutdiffsel
+513        V        P        3.30
+512        A        L        3.20
+514        G        A        2.95
+515        I        S        2.69
+516        G        A        2.68
+513        V        G        2.60
+386        N        T        2.59
+ 43        P        T        2.56
+ 52        L        V        2.41
+514        G        Y        2.32
+
+2017-12-30 16:22:42,555 - INFO - Writing to ./results/diffsel/wtDNA_ctrl/FP16-02-500ug-rep-1_mutdiffsel.csv
+2017-12-30 16:22:42,598 - INFO - Computing sitediffsel...
+2017-12-30 16:22:42,612 - INFO - Sites with largest absolute sitediffsel:
+site  abs_diffsel  positive_diffsel  negative_diffsel  max_diffsel  min_diffsel
+613        35.96              1.43            -34.53         1.43        -3.84
+514        29.69             29.58             -0.11         2.95        -0.11
+512        26.45             26.19             -0.25         3.20        -0.25
+516        25.95             24.34             -1.61         2.68        -1.13
+611        25.07              0.31            -24.77         0.28        -3.07
+513        24.97             24.45             -0.52         3.30        -0.52
+515        19.62             19.11             -0.51         2.69        -0.25
+ 88        19.48              2.40            -17.08         1.14        -2.97
+343        17.25              8.77             -8.48         1.77        -1.80
+ 90        16.44              2.04            -14.40         0.78        -3.37
+
+2017-12-30 16:22:42,612 - INFO - Writing to ./results/diffsel/wtDNA_ctrl/FP16-02-500ug-rep-1_sitediffsel.csv
+2017-12-30 16:22:42,621 - INFO - Successful completion of dms2_diffsel

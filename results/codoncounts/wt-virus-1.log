@@ -1,0 +1,159 @@
+2017-12-30 16:09:58,916 - INFO - Beginning execution of dms2_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:09:58,917 - INFO - Progress is being logged to ./results/codoncounts/wt-virus-1.log
+2017-12-30 16:10:01,940 - INFO - Version information:
+	Time and date: Sat Dec 30 16:09:58 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:10:01,940 - INFO - Parsed the following arguments:
+	minq = 15
+	R2trim = [170]
+	outdir = ./results/codoncounts
+	name = wt-virus-1
+	minfraccall = 0.95
+	minreads = 2
+	R1trim = [200]
+	minconcur = 0.75
+	maxmuts = 4
+	alignspecs = ['87,375,39,36', '376,666,36,39', '663,954,33,41', '955,1228,33,37', '1228,1527,34,35', '1527,1815,32,39', '1816,2098,36,41']
+	bcinfo = False
+	sitemask = ./data/sitemask_BG505.txt
+	purgebc = 0
+	refseq = ./data/BG505.W6.C2.T332N_env.fasta
+	R1 = ['BG505_wt-virus_1_R1.fastq.gz']
+	purgeread = 0
+	ncpus = -1
+	use_existing = yes
+	fastqdir = ./FASTQ_files/
+	R2 = None
+	bclen = 8
+	chartype = codon
+
+2017-12-30 16:10:03,625 - INFO - Read refseq of 2583 codons from ./data/BG505.W6.C2.T332N_env.fasta
+2017-12-30 16:10:03,629 - INFO - Reads are in these FASTQ pairs:
+	./FASTQ_files/BG505_wt-virus_1_R1.fastq.gz and ./FASTQ_files/BG505_wt-virus_1_R2.fastq.gz
+
+2017-12-30 16:10:03,630 - INFO - Now parsing read pairs...
+2017-12-30 16:10:13,636 - INFO - Reads parsed so far: 500000
+2017-12-30 16:10:22,794 - INFO - Reads parsed so far: 1000000
+2017-12-30 16:10:31,493 - INFO - Reads parsed so far: 1500000
+2017-12-30 16:10:41,373 - INFO - Reads parsed so far: 2000000
+2017-12-30 16:10:49,294 - INFO - Reads parsed so far: 2500000
+2017-12-30 16:10:58,437 - INFO - Reads parsed so far: 3000000
+2017-12-30 16:11:08,126 - INFO - Reads parsed so far: 3500000
+2017-12-30 16:11:16,322 - INFO - Reads parsed so far: 4000000
+2017-12-30 16:11:26,477 - INFO - Reads parsed so far: 4500000
+2017-12-30 16:11:34,423 - INFO - Reads parsed so far: 5000000
+2017-12-30 16:11:42,394 - INFO - Reads parsed so far: 5500000
+2017-12-30 16:11:53,302 - INFO - Reads parsed so far: 6000000
+2017-12-30 16:12:01,199 - INFO - Reads parsed so far: 6500000
+2017-12-30 16:12:09,143 - INFO - Reads parsed so far: 7000000
+2017-12-30 16:12:17,123 - INFO - Reads parsed so far: 7500000
+2017-12-30 16:12:25,193 - INFO - Reads parsed so far: 8000000
+2017-12-30 16:12:37,171 - INFO - Reads parsed so far: 8500000
+2017-12-30 16:12:45,304 - INFO - Reads parsed so far: 9000000
+2017-12-30 16:12:53,627 - INFO - Reads parsed so far: 9500000
+2017-12-30 16:13:01,779 - INFO - Reads parsed so far: 10000000
+2017-12-30 16:13:09,937 - INFO - Reads parsed so far: 10500000
+2017-12-30 16:13:18,092 - INFO - Reads parsed so far: 11000000
+2017-12-30 16:13:31,926 - INFO - Reads parsed so far: 11500000
+2017-12-30 16:13:40,129 - INFO - Reads parsed so far: 12000000
+2017-12-30 16:13:48,285 - INFO - Reads parsed so far: 12500000
+2017-12-30 16:13:56,415 - INFO - Reads parsed so far: 13000000
+2017-12-30 16:14:04,580 - INFO - Reads parsed so far: 13500000
+2017-12-30 16:14:12,732 - INFO - Reads parsed so far: 14000000
+2017-12-30 16:14:21,287 - INFO - Reads parsed so far: 14500000
+2017-12-30 16:14:29,869 - INFO - Reads parsed so far: 15000000
+2017-12-30 16:14:37,868 - INFO - Parsed 15468378 reads, found 7637539 unique barcodes.
+2017-12-30 16:14:37,873 - INFO - Summary stats on reads:
+fail filter  low Q barcode     total
+          0        1659529  15468378
+2017-12-30 16:14:37,873 - INFO - Writing these stats to ./results/codoncounts/wt-virus-1_readstats.csv
+
+2017-12-30 16:14:44,236 - INFO - Number of reads per barcode:
+                 number of barcodes
+number of reads                    
+1                           4476760
+2                           1455280
+3                            908088
+4                            469435
+5                            207043
+6                             80636
+7                             27639
+8                              8924
+9                              2652
+10                              769
+11                              223
+12                               65
+13                               12
+14                                7
+15                                4
+155                               1
+369                               1
+2017-12-30 16:14:44,237 - INFO - Writing these stats to ./results/codoncounts/wt-virus-1_readsperbc.csv
+
+2017-12-30 16:14:44,242 - INFO - Examining the 7637539 barcodes to build and align subamplicons...
+2017-12-30 16:14:49,288 - INFO - Barcodes examined so far: 200000
+2017-12-30 16:14:54,422 - INFO - Barcodes examined so far: 400000
+2017-12-30 16:14:59,248 - INFO - Barcodes examined so far: 600000
+2017-12-30 16:15:03,968 - INFO - Barcodes examined so far: 800000
+2017-12-30 16:15:08,688 - INFO - Barcodes examined so far: 1000000
+2017-12-30 16:15:13,295 - INFO - Barcodes examined so far: 1200000
+2017-12-30 16:15:17,859 - INFO - Barcodes examined so far: 1400000
+2017-12-30 16:15:22,345 - INFO - Barcodes examined so far: 1600000
+2017-12-30 16:15:26,806 - INFO - Barcodes examined so far: 1800000
+2017-12-30 16:15:31,424 - INFO - Barcodes examined so far: 2000000
+2017-12-30 16:15:35,775 - INFO - Barcodes examined so far: 2200000
+2017-12-30 16:15:40,301 - INFO - Barcodes examined so far: 2400000
+2017-12-30 16:15:44,616 - INFO - Barcodes examined so far: 2600000
+2017-12-30 16:15:48,876 - INFO - Barcodes examined so far: 2800000
+2017-12-30 16:15:53,127 - INFO - Barcodes examined so far: 3000000
+2017-12-30 16:15:57,412 - INFO - Barcodes examined so far: 3200000
+2017-12-30 16:16:01,648 - INFO - Barcodes examined so far: 3400000
+2017-12-30 16:16:05,838 - INFO - Barcodes examined so far: 3600000
+2017-12-30 16:16:10,004 - INFO - Barcodes examined so far: 3800000
+2017-12-30 16:16:14,296 - INFO - Barcodes examined so far: 4000000
+2017-12-30 16:16:18,619 - INFO - Barcodes examined so far: 4200000
+2017-12-30 16:16:22,943 - INFO - Barcodes examined so far: 4400000
+2017-12-30 16:16:27,189 - INFO - Barcodes examined so far: 4600000
+2017-12-30 16:16:31,464 - INFO - Barcodes examined so far: 4800000
+2017-12-30 16:16:35,725 - INFO - Barcodes examined so far: 5000000
+2017-12-30 16:16:39,954 - INFO - Barcodes examined so far: 5200000
+2017-12-30 16:16:44,108 - INFO - Barcodes examined so far: 5400000
+2017-12-30 16:16:48,299 - INFO - Barcodes examined so far: 5600000
+2017-12-30 16:16:52,434 - INFO - Barcodes examined so far: 5800000
+2017-12-30 16:16:56,621 - INFO - Barcodes examined so far: 6000000
+2017-12-30 16:17:00,780 - INFO - Barcodes examined so far: 6200000
+2017-12-30 16:17:04,913 - INFO - Barcodes examined so far: 6400000
+2017-12-30 16:17:09,023 - INFO - Barcodes examined so far: 6600000
+2017-12-30 16:17:13,117 - INFO - Barcodes examined so far: 6800000
+2017-12-30 16:17:17,258 - INFO - Barcodes examined so far: 7000000
+2017-12-30 16:17:21,364 - INFO - Barcodes examined so far: 7200000
+2017-12-30 16:17:25,484 - INFO - Barcodes examined so far: 7400000
+2017-12-30 16:17:29,632 - INFO - Barcodes examined so far: 7600000
+2017-12-30 16:17:30,412 - INFO - Examined all barcodes. Summary stats:
+aligned  not alignable  too few reads    total
+1959021        1201758        4476760  7637539
+2017-12-30 16:17:30,412 - INFO - Writing these stats to ./results/codoncounts/wt-virus-1_bcstats.csv
+
+2017-12-30 16:17:30,430 - INFO - Filtering to only sites listed in sitemask ./data/sitemask_BG505.txt
+2017-12-30 16:17:30,438 - INFO - Filtered from 861 to 670 sites.
+2017-12-30 16:17:30,438 - INFO - Writing the counts of each codon identity at each site to ./results/codoncounts/wt-virus-1_codoncounts.csv
+
+2017-12-30 16:17:30,467 - INFO - Successful completion of dms2_bcsubamp

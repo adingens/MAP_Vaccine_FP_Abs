@@ -1,0 +1,63 @@
+2017-12-30 16:39:49,064 - INFO - Beginning execution of dms2_logoplot in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:39:49,064 - INFO - Progress is being logged to ./results/diffsel/wtDNA_ctrl/Total_Logoplots/FP20-01-500ug.log
+2017-12-30 16:39:50,591 - INFO - Version information:
+	Time and date: Sat Dec 30 16:39:49 2017
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:39:50,591 - INFO - Parsed the following arguments:
+	use_existing = no
+	ncpus = -1
+	overlaycolormap = jet
+	letterheight = 1
+	sortsites = yes
+	name = FP20-01-500ug
+	overlay3 = None
+	ignore_extracols = no
+	outdir = ./results/diffsel/wtDNA_ctrl/Total_Logoplots
+	prefs = None
+	underlay = yes
+	fracsurvivemax = None
+	overlay1 = ['./results/diffsel/wtDNA_ctrl/summary_FP20-01-500ug-meanmutdiffsel.csv', 'wildtype', 'wildtype']
+	excludestop = no
+	stringency = 1
+	diffselrange = None
+	sepline = yes
+	mapmetric = functionalgroup
+	overlay2 = None
+	diffprefs = None
+	diffsel = ./results/diffsel/wtDNA_ctrl/summary_FP20-01-500ug-meanmutdiffsel.csv
+	restrictdiffsel = all
+	colormap = jet
+	fracsurvive = None
+	nperline = 84
+	numberevery = 10
+	scalebar = ['3', 'differential selection = 3']
+
+2017-12-30 16:39:50,594 - INFO - Removing existing file ./results/diffsel/wtDNA_ctrl/Total_Logoplots/FP20-01-500ug_diffsel.pdf
+2017-12-30 16:39:50,599 - INFO - Reading diffsel from file ./results/diffsel/wtDNA_ctrl/summary_FP20-01-500ug-meanmutdiffsel.csv...
+2017-12-30 16:39:50,617 - INFO - Read data for 670 sites.
+
+2017-12-30 16:39:50,675 - INFO - Reading overlay for wildtype from ./results/diffsel/wtDNA_ctrl/summary_FP20-01-500ug-meanmutdiffsel.csv...
+2017-12-30 16:39:50,766 - INFO - Read overlay for 670 sites.
+
+2017-12-30 16:39:50,766 - INFO - Making logo plot ./results/diffsel/wtDNA_ctrl/Total_Logoplots/FP20-01-500ug_diffsel.pdf...
+2017-12-30 16:40:09,428 - INFO - Successfully created logo plot.
+
+2017-12-30 16:40:09,429 - INFO - Successful completion of dms2_logoplot

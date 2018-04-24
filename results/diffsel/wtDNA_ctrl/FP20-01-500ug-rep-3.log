@@ -1,0 +1,71 @@
+2017-12-30 16:22:37,191 - INFO - Beginning execution of dms2_diffsel in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:22:37,191 - INFO - Progress is being logged to ./results/diffsel/wtDNA_ctrl/FP20-01-500ug-rep-3.log
+2017-12-30 16:22:39,534 - INFO - Version information:
+	Time and date: Sat Dec 30 16:22:37 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:22:39,534 - INFO - Parsed the following arguments:
+	ncpus = 2
+	use_existing = yes
+	outdir = ./results/diffsel/wtDNA_ctrl
+	pseudocount = 5.0
+	chartype = codon_to_aa
+	indir = ./results/renumberedcounts
+	name = FP20-01-500ug-rep-3
+	excludestop = yes
+	sel = mut-virus-3-FP20-01-500ug
+	mincount = 0
+	mock = mut-virus-3
+	err = wt-DNA-3
+
+2017-12-30 16:22:39,536 - INFO - Reading selected sample counts from mut-virus-3-FP20-01-500ug
+2017-12-30 16:22:39,549 - INFO - Reading mock-selected sample counts from mut-virus-3
+2017-12-30 16:22:39,557 - INFO - Reading error-control sample counts from wt-DNA-3
+2017-12-30 16:22:39,565 - INFO - Computing mutdiffsel...
+2017-12-30 16:22:42,571 - INFO - Mutations with largest mutdiffsel:
+site wildtype mutation  mutdiffsel
+515        I        P        3.13
+514        G        E        2.73
+515        I        T        2.69
+515        I        M        2.68
+515        I        Y        2.64
+515        I        S        2.58
+514        G        V        2.46
+516        G        V        2.33
+513        V        A        2.30
+330        H        V        2.29
+
+2017-12-30 16:22:42,572 - INFO - Writing to ./results/diffsel/wtDNA_ctrl/FP20-01-500ug-rep-3_mutdiffsel.csv
+2017-12-30 16:22:42,611 - INFO - Computing sitediffsel...
+2017-12-30 16:22:42,625 - INFO - Sites with largest absolute sitediffsel:
+site  abs_diffsel  positive_diffsel  negative_diffsel  max_diffsel  min_diffsel
+514        25.65             25.65              0.00         2.73         0.00
+613        25.18              0.38            -24.79         0.36        -2.82
+515        22.48             22.39             -0.09         3.13        -0.09
+512        22.10             22.10              0.00         2.21         0.00
+513        16.84             16.59             -0.25         2.30        -0.25
+516        16.16             14.88             -1.28         2.33        -0.27
+624        15.93              0.40            -15.53         0.33        -2.08
+352        15.60              8.83             -6.77         1.92        -1.55
+625        14.88              0.56            -14.32         0.50        -1.68
+403        14.51              7.59             -6.92         2.19        -1.56
+
+2017-12-30 16:22:42,625 - INFO - Writing to ./results/diffsel/wtDNA_ctrl/FP20-01-500ug-rep-3_sitediffsel.csv
+2017-12-30 16:22:42,636 - INFO - Successful completion of dms2_diffsel

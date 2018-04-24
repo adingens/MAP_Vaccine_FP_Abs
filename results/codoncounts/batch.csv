@@ -1,0 +1,15 @@
+name,R1
+mut-virus-1,BG505_mut-virus_1_R1.fastq.gz
+mut-virus-3-FP20-01-500ug,BG505_mut-virus_3_FP20-01_500ug_R1.fastq.gz
+mut-virus-3-VRC34-33ug,BG505_mut-virus_3_VRC34_33ug_R1.fastq.gz
+wt-virus-3,BG505_wt-virus_3_R1.fastq.gz
+mut-virus-3,BG505_mut-virus_3_R1.fastq.gz
+mut-DNA-3,BG505_mut-DNA_3_R1.fastq.gz
+mut-virus-1-VRC34-33ug,BG505_mut-virus_1_VRC34_33ug_R1.fastq.gz
+wt-DNA-1,BG505_wt-DNA_1_R1.fastq.gz
+mut-virus-1-FP16-02-500ug,BG505_mut-virus_1_FP16-02_500ug_R1.fastq.gz
+wt-DNA-3,BG505_wt-DNA_3_R1.fastq.gz
+mut-virus-3-FP16-02-500ug,BG505_mut-virus_3_FP16-02_500ug_R1.fastq.gz
+wt-virus-1,BG505_wt-virus_1_R1.fastq.gz
+mut-virus-1-FP20-01-500ug,BG505_mut-virus_1_FP20-01_500ug_R1.fastq.gz
+mut-DNA-1,BG505_mut-DNA_1_R1.fastq.gz

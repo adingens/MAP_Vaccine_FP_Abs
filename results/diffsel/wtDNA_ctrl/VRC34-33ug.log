@@ -1,0 +1,62 @@
+2017-12-30 16:23:27,581 - INFO - Beginning execution of dms2_logoplot in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:23:27,581 - INFO - Progress is being logged to ./results/diffsel/wtDNA_ctrl/VRC34-33ug.log
+2017-12-30 16:23:28,983 - INFO - Version information:
+	Time and date: Sat Dec 30 16:23:27 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:23:28,983 - INFO - Parsed the following arguments:
+	diffsel = ./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv
+	diffprefs = None
+	nperline = 84
+	underlay = yes
+	numberevery = 10
+	sepline = no
+	scalebar = ['10', 'differential selection = 10']
+	prefs = None
+	overlay3 = None
+	overlay1 = ['./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv', 'wildtype', 'wildtype']
+	diffselrange = None
+	overlaycolormap = jet
+	use_existing = no
+	overlay2 = None
+	stringency = 1
+	restrictdiffsel = positive
+	name = VRC34-33ug
+	fracsurvive = None
+	mapmetric = functionalgroup
+	sortsites = yes
+	colormap = jet
+	fracsurvivemax = None
+	excludestop = no
+	ignore_extracols = no
+	outdir = ./results/diffsel/wtDNA_ctrl
+	letterheight = 1
+	ncpus = -1
+
+2017-12-30 16:23:28,985 - INFO - Reading diffsel from file ./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv...
+2017-12-30 16:23:29,002 - INFO - Read data for 670 sites.
+
+2017-12-30 16:23:29,050 - INFO - Reading overlay for wildtype from ./results/diffsel/wtDNA_ctrl/summary_VRC34-33ug-meanmutdiffsel.csv...
+2017-12-30 16:23:29,112 - INFO - Read overlay for 670 sites.
+
+2017-12-30 16:23:29,113 - INFO - Making logo plot ./results/diffsel/wtDNA_ctrl/VRC34-33ug_diffsel.pdf...
+2017-12-30 16:23:38,982 - INFO - Successfully created logo plot.
+
+2017-12-30 16:23:38,983 - INFO - Successful completion of dms2_logoplot

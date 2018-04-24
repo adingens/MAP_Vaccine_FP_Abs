@@ -1,0 +1,47 @@
+2017-12-30 16:38:21,083 - INFO - Beginning execution of dms2_batch_diffsel in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:38:21,083 - INFO - Progress is being logged to ./results/diffsel/wtDNA_ctrl/summary.log
+2017-12-30 16:38:21,931 - INFO - Version information:
+	Time and date: Sat Dec 30 16:38:21 2017
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:38:21,931 - INFO - Parsed the following arguments:
+	indir = ./results/renumberedcounts
+	ncpus = -1
+	pseudocount = 5
+	chartype = codon_to_aa
+	batchfile = ./results/diffsel/wtDNA_ctrl/batch.csv
+	excludestop = yes
+	mincount = 0
+	summaryprefix = summary
+	outdir = ./results/diffsel/wtDNA_ctrl
+	use_existing = yes
+
+2017-12-30 16:38:21,931 - INFO - Parsing info from ./results/diffsel/wtDNA_ctrl/batch.csv
+2017-12-30 16:38:21,942 - INFO - Read the following sample information:
+group,name,sel,mock,err,mds_names,libfracsurvive
+FP16-02-500ug,rep-1,mut-virus-1-FP16-02-500ug,mut-virus-1,wt-DNA-1,FP16-02-500ug-rep-1,0.052725
+FP16-02-500ug,rep-3,mut-virus-3-FP16-02-500ug,mut-virus-3,wt-DNA-3,FP16-02-500ug-rep-3,0.04188
+FP20-01-500ug,rep-3,mut-virus-3-FP20-01-500ug,mut-virus-3,wt-DNA-3,FP20-01-500ug-rep-3,0.038097000000000006
+FP20-01-500ug,rep-1,mut-virus-1-FP20-01-500ug,mut-virus-1,wt-DNA-1,FP20-01-500ug-rep-1,0.047702
+VRC34-33ug,rep-3,mut-virus-3-VRC34-33ug,mut-virus-3,wt-DNA-3,VRC34-33ug-rep-3,0.050239
+VRC34-33ug,rep-1,mut-virus-1-VRC34-33ug,mut-virus-1,wt-DNA-1,VRC34-33ug-rep-1,0.063644
+
+
+2017-12-30 16:38:21,955 - INFO - Output summary files already exist and '--use_existing' is 'yes', so exiting with no further action.

@@ -1,0 +1,79 @@
+2017-12-30 16:09:56,666 - INFO - Beginning execution of dms2_batch_bcsubamp in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/FusionPeptide_Antibodies/FP_Abs_FinalAnalysis
+
+2017-12-30 16:09:56,666 - INFO - Progress is being logged to ./results/codoncounts/summary.log
+2017-12-30 16:09:57,550 - INFO - Version information:
+	Time and date: Sat Dec 30 16:09:56 2017
+	Platform: Linux-3.13.0-49-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 3.4.3 (default, Oct 14 2015, 20:28:29)  [GCC 4.8.4]
+	dms_tools2 version: 2.2.dev1
+	Bio version: 1.70
+	HTSeq version: 0.9.1
+	pandas version: 0.20.3
+	numpy version: 1.13.1
+	IPython version: 6.2.0
+	matplotlib version: 2.0.2
+	plotnine version: 0.2.1
+	natsort version: 5.1.0
+	pystan version: 2.16.0.0
+	scipy version: 0.19.1
+	seaborn version: 0.8.1
+	phydmslib version: 2.2.0
+	jupyter version: 1.0.0
+	rpy2 version: 2.9.1
+
+2017-12-30 16:09:57,550 - INFO - Parsed the following arguments:
+	purgebc = 0
+	minfraccall = 0.95
+	maxmuts = 4
+	outdir = ./results/codoncounts
+	batchfile = ./results/codoncounts/batch.csv
+	minq = 15
+	alignspecs = ['87,375,39,36', '376,666,36,39', '663,954,33,41', '955,1228,33,37', '1228,1527,34,35', '1527,1815,32,39', '1816,2098,36,41']
+	R2 = None
+	minconcur = 0.75
+	refseq = ./data/BG505.W6.C2.T332N_env.fasta
+	chartype = codon
+	purgeread = 0
+	fastqdir = ./FASTQ_files/
+	R2trim = [170]
+	use_existing = yes
+	sitemask = ./data/sitemask_BG505.txt
+	minreads = 2
+	bclen = 8
+	bcinfo = False
+	R1trim = [200]
+	ncpus = 14
+	summaryprefix = summary
+
+2017-12-30 16:09:57,556 - INFO - Parsing sample info from ./results/codoncounts/batch.csv
+2017-12-30 16:09:57,564 - INFO - Read the following sample information:
+name,R1
+mut-virus-1,BG505_mut-virus_1_R1.fastq.gz
+mut-virus-3-FP20-01-500ug,BG505_mut-virus_3_FP20-01_500ug_R1.fastq.gz
+mut-virus-3-VRC34-33ug,BG505_mut-virus_3_VRC34_33ug_R1.fastq.gz
+wt-virus-3,BG505_wt-virus_3_R1.fastq.gz
+mut-virus-3,BG505_mut-virus_3_R1.fastq.gz
+mut-DNA-3,BG505_mut-DNA_3_R1.fastq.gz
+mut-virus-1-VRC34-33ug,BG505_mut-virus_1_VRC34_33ug_R1.fastq.gz
+wt-DNA-1,BG505_wt-DNA_1_R1.fastq.gz
+mut-virus-1-FP16-02-500ug,BG505_mut-virus_1_FP16-02_500ug_R1.fastq.gz
+wt-DNA-3,BG505_wt-DNA_3_R1.fastq.gz
+mut-virus-3-FP16-02-500ug,BG505_mut-virus_3_FP16-02_500ug_R1.fastq.gz
+wt-virus-1,BG505_wt-virus_1_R1.fastq.gz
+mut-virus-1-FP20-01-500ug,BG505_mut-virus_1_FP20-01_500ug_R1.fastq.gz
+mut-DNA-1,BG505_mut-DNA_1_R1.fastq.gz
+
+
+2017-12-30 16:09:57,565 - INFO - Running dms2_bcsubamp on all samples using 14 CPUs...
+2017-12-30 16:21:20,229 - INFO - Completed runs of dms2_bcsubamp.
+
+2017-12-30 16:21:20,260 - INFO - Plotting read stats to ./results/codoncounts/summary_readstats.pdf
+2017-12-30 16:21:21,019 - INFO - Plotting barcode stats to ./results/codoncounts/summary_bcstats.pdf
+2017-12-30 16:21:21,616 - INFO - Plotting reads per barcode to ./results/codoncounts/summary_readsperbc.pdf
+2017-12-30 16:21:23,609 - INFO - Plotting count depth to ./results/codoncounts/summary_depth.pdf
+2017-12-30 16:21:25,580 - INFO - Plotting mutation frequencies to ./results/codoncounts/summary_mutfreq.pdf
+2017-12-30 16:21:36,285 - INFO - Plotting average frequencies of codon mutation types to ./results/codoncounts/summary_codonmuttypes.pdf, writing the data to ./results/codoncounts/summary_codonmuttypes.csv
+2017-12-30 16:21:45,840 - INFO - Plotting average frequencies of nucleotide changes per codon mutation to ./results/codoncounts/summary_codonntchanges.pdf
+2017-12-30 16:21:54,783 - INFO - Plotting frequencies of nucleotide changes in 1-nucleotide mutations to ./results/codoncounts/summary_singlentchanges.pdf
+2017-12-30 16:22:04,443 - INFO - Plotting fraction of mutations seen less than some number of times to ./results/codoncounts/summary_cumulmutcounts.pdf
+2017-12-30 16:22:21,508 - INFO - Successful completion of dms2_batch_bcsubamp
