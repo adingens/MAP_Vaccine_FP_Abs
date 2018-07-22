@@ -1,6 +1,7 @@
 # Complete functional mapping of infection- and vaccine-elicited antibodies against the fusion peptide of HIV
 This repository analyzes the mutational antigenic profiling data for a study of antibodies against HIV.
-Study by Adam S. Dingens, Priyamvada Acharya, Hugh K. Haddox, Reda Rawi, Kai Xu, Gwo-Yu Chuang, Hui Wei, John R. Mascola,  Bridget Carragher, Clint S. Potter, Julie Overbaugh, Peter D. Kwong, and Jesse D. Bloom
+
+The citation for the final published study is [Dingens et al (2018)](https://doi.org/10.1371/journal.ppat.1007159).
 
 The mutational antigenic profiling experiments were performed by Adam Dingens in the [Bloom lab](http://research.fhcrc.org/bloom/en.html) and [Overbaugh lab](https://research.fhcrc.org/overbaugh/en.html) in the summer/autumn of 2017. 
 
@@ -14,7 +15,7 @@ Here we use [dms_tools2](https://jbloomlab.github.io/dms_tools2/) to analyze the
 Specifically, the [Jupyter notebook](http://jupyter.org/) [analysis_notebook.ipynb](analysis_notebook.ipynb) does the complete analysis of the mutational antigenic profiling data. 
 It downloads the deep sequencing data from the [Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra), processes this  data, and then analyzes the selection in the context of each antibody. 
 
-The generaly strategy for barcoded subamplicon Illumina sequencing approach is described [here](https://jbloomlab.github.io/dms_tools2/bcsubamp.html), and the computation of *differential selection* is described [here](https://jbloomlab.github.io/dms_tools2/diffsel.html).
+The general strategy for barcoded subamplicon Illumina sequencing approach is described [here](https://jbloomlab.github.io/dms_tools2/bcsubamp.html), and the computation of *differential selection* is described [here](https://jbloomlab.github.io/dms_tools2/diffsel.html).
 
 ## Organization
 The mutational antigenic profiling analysis is performed by the [Jupyter notebook](http://jupyter.org/) [analysis_notebook.ipynb](analysis_notebook.ipynb). 
